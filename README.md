@@ -6,12 +6,12 @@
 ## To process text data
 * ```tr ' ' '\12' < data.txt``` is the command used to map each line into individual words.
 * ```tr ' ' '\12' < data.txt | sort``` is the command used to sort the text in data file.
-* ```tr ' ' '\12' < data.txt | sort | uniq -c``` is the command used to sort the output and send it to uniq with pipe operator.
-* ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr``` is used to send the output i.e unique words to sort with -nr flag. 
-* ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt``` is used to store the output to result.txt file. 
+* ```tr ' ' '\12' < data.txt | sort | uniq -c``` is the command used to sort the output based on uniqueness of data
+* ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr``` is used to send the output i.e unique words to sort with -nr flag. Where the numerical comparison is done with reversing results.
+* ```tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt``` is used to store the output of previously executed command to result.txt file. 
 
 ### up arrow in Bash
-* Up arrow in bash shell is used to view the commands we executed previously. 
+* Up arrow in bash shell is used to view the commands that were executed previously. 
 
 ### Bash Shell Commands
 1. sort --help displays arguments that are used while sorting with bash commands. 
